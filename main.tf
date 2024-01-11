@@ -138,7 +138,7 @@ resource "azurerm_network_security_rule" "vm-public-ssh-access" {
   network_security_group_name = azurerm_network_security_group.vm-sg-ssh.name
 }
 
-#### Load balancer
+### Load balancer
 resource "azurerm_public_ip" "lb_public_ip" {
   name                = "${var.prefix}PublicIPForLB"
   location            = azurerm_resource_group.rg-nginx.location
